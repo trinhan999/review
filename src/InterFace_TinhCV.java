@@ -30,9 +30,9 @@ class InfMain {
         //h1.PI
         h1.rad = 5;
         float cv = h1.tinhCV();
-        System.out.println(cv);
+        System.out.println("chu vi: " + cv);
         float dt = h1.tinhDT();
-        System.out.println(dt);
+        System.out.println("dien tich: " + dt);
     }
 }
 
