@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.*;
 
 public class java_col_main {
     public static void main(String args[])
@@ -48,5 +45,24 @@ public class java_col_main {
             System.out.println(i);
         }
 
+        System.out.println("--------------------------------");
+        HashSet<String> cars = new HashSet<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+
+        Iterator<String> carsSset = cars.iterator();
+        while(carsSset.hasNext()){
+            System.out.println(carsSset.next());
+        }
+
+        System.out.println("--------------------------------");
+        cars.remove("Ford");
+        carsSset = cars.iterator();
+        while(carsSset.hasNext()){
+            System.out.println(carsSset.next());
+        }
     }
 }
